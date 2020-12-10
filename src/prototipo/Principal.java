@@ -16,18 +16,19 @@ public class Principal {
         Imovel im;
         Vendedor ve;
         
+        //Questionadores
         int op;
         int cli;
         int vend = 0;
         
-        //Questionadores
+        
         String endereco;
         double valor;
         double preco;
         double comissao;
         double salario;
         
-        
+        // Menu Principal
         OUTER:
         OUTER_1:
         for (;;) {
@@ -63,7 +64,7 @@ public class Principal {
             } else if (op==2){
                 
                 
-                vend = Integer.parseInt(JOptionPane.showInputDialog("Qual tipo de imóvel deseja comprar:\n "
+                vend = Integer.parseInt(JOptionPane.showInputDialog("O que você quer ver:\n "
                         + "1 - Salario\n"
                         + "2 - Comissao\n"
                         + "3 - Sair")  );
