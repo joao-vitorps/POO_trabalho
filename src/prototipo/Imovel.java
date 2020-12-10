@@ -5,13 +5,12 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Vitor
+ * @author Vitor e William
  */
 public class Imovel {
     private String endereco;
     private double preco;
-    private double taxas;
-    
+        
     
 
     //Gets

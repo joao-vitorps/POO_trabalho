@@ -21,10 +21,13 @@ public class Velho extends Imovel {
     }
     
     
+    
+    
     @Override
     public double calculaPreco(){
         return this.getPreco() * 0.9;
     }
+    
     
     @Override
     public void imprime(){
