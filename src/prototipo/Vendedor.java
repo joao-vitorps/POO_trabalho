@@ -54,18 +54,15 @@ public class Vendedor extends Imovel{
         this.comissao = comissao;
     }
     
-            public void imprimeSalario(){
+    //Polimorfismo
+    @Override
+            public void imprime(){
         JOptionPane.showMessageDialog(null, "O seu salario é: \n"
                 + this.salario);
     }
     
-    //Polimorfismo+/-
-    public void imprime(double sal){
-        double salario = sal*comissao;
-        JOptionPane.showMessageDialog(null, "Os dados da sua conta são: \n"
-                + "Salario: "+this.getSalario()+"\n"
-                + "Preço: "+this.getComissao());
-    }
+   
+   
     
 
 }

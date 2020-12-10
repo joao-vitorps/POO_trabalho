@@ -74,7 +74,7 @@ public class Principal {
                 case 1:
                     ve = new Vendedor();
                     ve.setSalario(2012.0); //Salario Base
-                    ve.imprimeSalario();
+                    ve.imprime();
                     break;
                     
                 //Comissao    
@@ -83,7 +83,7 @@ public class Principal {
                     comissao = Double.parseDouble(JOptionPane.showInputDialog("Qual a porcentagem da comissão (0.0): "));
                     ve = new Vendedor();
                     ve.calculaComissao(preco, comissao);
-                    ve.imprimeSalario();
+                    ve.imprime();
                     break;
                     
                 default:

@@ -20,7 +20,7 @@ public class Novo extends Imovel {
     
     @Override
     public double calculaPreco(){
-        return this.getPreco() * 1.1;
+        return (this.getPreco() * 1.1);
     }
     
     @Override
