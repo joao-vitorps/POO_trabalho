@@ -44,8 +44,8 @@ public class Vendedor extends Imovel{
     
     
     //Construtores:
-    public void calculaComissao(double salario, double comissao ){
-            this.salario = salario + (salario*comissao);
+    public void calculaComissao(double preco, double comissao, double salario ){
+            this.salario = salario + (preco*comissao);
       
     }
 
@@ -57,8 +57,8 @@ public class Vendedor extends Imovel{
     //Polimorfismo
     @Override
             public void imprime(){
-        JOptionPane.showMessageDialog(null, "O seu salario é: \n"
-                + this.salario);
+        JOptionPane.showMessageDialog(null, "O seu salario com a comissão é: \n"
+                + (this.salario + this.comissao));
     }
     
    

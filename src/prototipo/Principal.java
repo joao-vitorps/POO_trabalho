@@ -25,6 +25,7 @@ public class Principal {
         double valor;
         double preco;
         double comissao;
+        double salario;
         
         
         OUTER:
@@ -82,7 +83,9 @@ public class Principal {
                     preco = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor do imóvel a ser vendido: "));
                     comissao = Double.parseDouble(JOptionPane.showInputDialog("Qual a porcentagem da comissão (0.0): "));
                     ve = new Vendedor();
-                    ve.calculaComissao(preco, comissao);
+                    ve.setSalario(2012.0);
+                    salario = ve.getSalario();
+                    ve.calculaComissao(preco, comissao, salario);
                     ve.imprime();
                     break;
                     

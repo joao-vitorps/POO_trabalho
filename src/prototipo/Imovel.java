@@ -38,8 +38,7 @@ public class Imovel {
         this.preco = preco;
     }
     
-    
-    
+      
     public Imovel(String endereco, double preco) {
         this.endereco = endereco;
         this.preco = preco;
